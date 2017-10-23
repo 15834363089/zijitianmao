@@ -157,6 +157,7 @@ height: 100%;
     font-weight: normal;
     float: left;
     margin: 0;
+    padding-left: 3px;
 }
 
 .zhensousou .sou2 {
@@ -327,7 +328,16 @@ height: 100%;
     top: 0;
     z-index: 99999;
 }
-
+.xbox{
+    width: 800px;
+    height: 100%;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    z-index: 9999;
+    background: #ff3377;
+    display: none;
+}
 .shangpin1 {
     width: 200px;
     height: 500px;
@@ -465,7 +475,20 @@ height: 100%;
     float: left;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+    position: relative;
 }
+.zhezhao{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.59);
+    display: none;
+    position: absolute;
+    top:0;left:0;
+}
+.pinpai ul li:hover .zhezhao{
+    display: block;
+}
+
 .pinpai ul li:nth-child(10){
     border-right: 0;
 }
@@ -1106,83 +1129,126 @@ height: 100%;
 .hongtiaotiao{
     width: 100%;
     height: 50px;
-    background-color: rgba(255, 0, 0, 0.68);
+    background-color: rgba(255, 0, 0, 0.88);
     position: fixed;
     top:-50px;
     transition: top 1s;
     z-index: 111111111111111111111111111111111;
 }
+.xialaide{
+    width: 1226px;
+    height: 50px;
+    margin: 0 auto;
+}
+.zuo-i{
+    line-height: 50px;
+    width: 160px;
+    float: left;
+    color: #fff;
+    font-size: 18px;
+}
+.souyixia{
+    width: 740px;
+    height: 30px;
+    margin: 0 auto;
+}
+.souyixia input{
+    width: 648px;
+    height: 30px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.souyixia span{
+    color: #fff;
+    font-size: 18px;
+    line-height: 50px;
+    margin-left: 10px;
+}
 .zuoce{
     position: fixed;
-    bottom:10%;left: calc(50% - 651px);
+    bottom:20%;
+    right: calc(50% + 615px);
     width: 0;
     height: 0;
     text-align: center;
     z-index: 666699999999999999996;
     transition: all 1s;
     overflow: hidden;
-    background: #ccc;
+    background: rgba(102, 102, 102, 0.85);
+    color:#fff;
 }
 .zuoce .louceng{
-    padding-top: 6px;
+    padding: 6px;
     width: 36px;
     height: 36px;
     line-height: 12px;
     font-sizi:12px;
-    border:1px solid #000;
+    border-bottom:1px solid #fff;
 }
-.zuoce p{
+.zuoce .bb{
+    width: 36px;
+    height: 36px;
     line-height: 36px;
     font-size: 12px;
     text-align: center;
-    border:1px solid #000;
+    background: red;
+    color: #fff;
+    border-bottom:1px solid #fff;
 }
-.louceng:nth-child(1):hover {
-    background: #00A5C4;
+.zuoce .aa{
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 12px;
+    text-align: center;
+    background: #ccc;
 }
-
 .louceng:nth-child(2):hover {
-    background: #fd6a88;
+    background: #00A5C4;
 }
 
 .louceng:nth-child(3):hover {
-    background: #4bff33;
-}
-
-.louceng:nth-child(4):hover {
-    background: #0040ff;
-}
-
-.louceng:nth-child(5):hover {
-    background: #de6cff;
-}
-
-.louceng:nth-child(6):hover {
-    background: #ff0017;
-}
-
-.louceng:nth-child(1).active {
-    background: #00A5C4;
-}
-
-.louceng:nth-child(2).active {
     background: #fd6a88;
 }
 
-.louceng:nth-child(3).active {
+.louceng:nth-child(4):hover {
     background: #4bff33;
 }
 
-.louceng:nth-child(4).active {
+.louceng:nth-child(5):hover {
     background: #0040ff;
 }
 
-.louceng:nth-child(5).active {
+.louceng:nth-child(6):hover {
     background: #de6cff;
 }
 
+.louceng:nth-child(7):hover {
+    background: #ff1cb6;
+}
+
+.louceng:nth-child(2).active {
+    background: #00A5C4;
+}
+
+.louceng:nth-child(3).active {
+    background: #fd6a88;
+}
+
+.louceng:nth-child(4).active {
+    background: #4bff33;
+}
+
+.louceng:nth-child(5).active {
+    background: #0040ff;
+}
+
 .louceng:nth-child(6).active {
-    background: #ff0017;
+    background: #de6cff;
+}
+
+.louceng:nth-child(7).active {
+    background: #ff1cb6;
 }
 
 

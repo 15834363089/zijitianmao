@@ -56,7 +56,6 @@ let obj = document.body.scrollTop === 0 ? document.documentElement : document.bo
 }
 //楼层跳转
 {
-
     let zuoce = document.querySelector(".zuoce")
     let zuobian = document.querySelectorAll(".zuoce div")
     let neirong = document.querySelectorAll(".meilirensheng")
@@ -64,7 +63,7 @@ let obj = document.body.scrollTop === 0 ? document.documentElement : document.bo
         let obj = document.body.scrollTop === 0 ? document.documentElement : document.body;
         let st = obj.scrollTop;
         if (st > 800) {
-            zuoce.style.cssText = "width:36px;height:255px;";
+            zuoce.style.cssText = "width:36px;height:288px;";
         } else if (st < 800) {
             zuoce.style.cssText = "width:0px;height:0px;";
         }
@@ -108,6 +107,31 @@ let obj = document.body.scrollTop === 0 ? document.documentElement : document.bo
         }
     })
 }
+
+
+//导航显隐
+{
+    let da=document.querySelector(".borner")
+    let left=document.querySelector(".shangpin")
+    let right=document.querySelector(".xbox")
+    left.onmousemove=function () {
+        right.style.display="block";
+    }
+
+    left.onmouseout=function (e) {
+        e.stopPropagation();
+//        right.style.display="none";
+    }
+    da.onmouseleave=function () {
+        right.style.display="none";
+    }
+
+    right.onmouseout=function () {
+        right.style.display="none";
+    }
+}
+
+
 
 
 
